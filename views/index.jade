@@ -1,6 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p.text-primary eyo
+  nav.fixed-top
+      ul.animasi-teks
+        li
+          a(href='/') Home
+        li
+          a(href='https://github.com/SanH16', target='_blank') github
+        li 
+  section.about
+    .main
+      img(src='images/self.png', alt='Gambar')
+      .about-text
+        h1 #{data.title}
+        h5
+          | Interact -
+          span  Web Developer & UI Design
+        p #{data.desc}
+        a(href="https://drive.google.com/file/d/1HM85j34QxV46zRAoPajTzt1b8IfGLEvk/view?usp=sharing", target='_blank')     
+          button.button My CV
+    .garis-pembatas
+    .container
+      marquee Adhitya Hasan
+  footer
+    p Hak Cipta © 2023 SanTech. All right reserved
