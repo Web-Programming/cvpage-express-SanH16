@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "cv-adhitya-hasan",
   "builds": [
     {
       "src": "app.js",
